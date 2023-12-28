@@ -10,7 +10,7 @@ import java.util.List;
 import Classes.Product;
 
 public class ProductDAO {
-    private Dbconn dbconn = new Dbconn();
+    private final Dbconn dbconn = new Dbconn();
 
     private static final String SELECT_PRODUCTS_BY_CATEGORY = "SELECT * FROM products WHERE category = ?";
 

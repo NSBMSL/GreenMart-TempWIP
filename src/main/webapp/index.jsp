@@ -586,14 +586,14 @@
                 <!-- <li class="nav-item">
                     <button class="nav-link btn" id="fruits-tab" data-bs-toggle="tab" data-bs-target="#fruits"
                         type="button">Fruits & Vegetables</button>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <button class="nav-link btn" id="beverage-tab" data-bs-toggle="tab" data-bs-target="#beverage"
                         type="button">Beverage</button>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <button class="nav-link btn" id="dairy-tab" data-bs-toggle="tab" data-bs-target="#dairy"
                         type="button">Dairy</button>
                 </li> -->
@@ -671,6 +671,77 @@
                 <div class="row g-8">
                     
                  <c:forEach var="product" items="${cookingProducts}">
+                    <div class="col-xxl-2 col-lg-3 col-md-4 col-6">
+                        <div class="product-box-4">
+                            <div class="product-image">
+                                <div class="label-flex">
+                                    <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+
+                                <a href="product-left.html">
+                                    <img src="assets/images/veg-3/cate1/2.png" class="img-fluid" alt="">
+                                </a>
+
+                                <ul class="option">
+                                    <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                            <i class="fa-solid fa-tablet"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="product-detail">
+                                <ul class="rating">
+                                    <!-- ... (rating stars) ... -->
+                                    <li>
+                                        <i data-feather="star" class="fill"></i>
+                                    </li>
+                                    <li>
+                                        <i data-feather="star" class="fill"></i>
+                                    </li>
+                                    <li>
+                                        <i data-feather="star" class="fill"></i>
+                                    </li>
+                                    <li>
+                                        <i data-feather="star" class="fill"></i>
+                                    </li>
+                                    <li>
+                                        <i data-feather="star"></i>
+                                    </li>
+                                </ul>
+                                <a href="product-left.html">
+                                    <h5 class="name">${product.name}</h5>
+                                </a>
+                                <h5 class="price theme-color">${product.price}</h5>
+                                <div class="price-qty">
+                                    <div class="counter-number">
+                                        <div class="counter">
+                                            <div class="qty-left-minus" data-type="minus" data-field="">
+                                                <i class="fa-solid fa-minus"></i>
+                                            </div>
+                                            <input class="form-control input-number qty-input" type="text" name="quantity" value="0">
+                                            <div class="qty-right-plus" data-type="plus" data-field="">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy-button buy-button-2 btn btn-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </c:forEach>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="beverage" role="tabpanel" aria-labelledby="beverage-tab">
+                <div class="row g-8">
+                    
+                 <c:forEach var="product" items="${beverageProducts}">
                     <div class="col-xxl-2 col-lg-3 col-md-4 col-6">
                         <div class="product-box-4">
                             <div class="product-image">

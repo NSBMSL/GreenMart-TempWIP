@@ -22,11 +22,13 @@ public class CategoryServlet implements ServletContextListener {
             // Initialize ProductDAO and fetch cooking products
             ProductDAO productDao = new ProductDAO();
             List<Product> cookingProducts = productDao.getProductsByCategory("cooking");
+             List<Product> beverageProducts = productDao.getProductsByCategory("beverage");
             
             // Store the category list and cooking products in the application scope
             ServletContext servletContext = sce.getServletContext();
             servletContext.setAttribute("categories", categories);
             servletContext.setAttribute("cookingProducts", cookingProducts);
+            servletContext.setAttribute("beverageProducts", beverageProducts);
         } catch (Exception e) {
             e.printStackTrace(); // Log the exception
             // Handle the exception as needed
