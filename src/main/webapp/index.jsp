@@ -2475,7 +2475,7 @@
 <%--footer here--%>
 
 
-<%@ include file="Footer.jsp" %>
+<%--<%@ include file="Footer.jsp" %>--%>
 
 
 <!-- Quick View Modal Box Start -->
