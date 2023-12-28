@@ -670,7 +670,7 @@
             <div class="tab-pane fade" id="cooking" role="tabpanel" aria-labelledby="cooking-tab">
                 <div class="row g-8">
                     
-
+                 <c:forEach var="product" items="${cookingProducts}">
                     <div class="col-xxl-2 col-lg-3 col-md-4 col-6">
                         <div class="product-box-4">
                             <div class="product-image">
@@ -713,9 +713,9 @@
                                     </li>
                                 </ul>
                                 <a href="product-left.html">
-                                    <h5 class="name">Another Vegetable</h5>
+                                    <h5 class="name">${product.name}</h5>
                                 </a>
-                                <h5 class="price theme-color">LKR 99.99<del>LKR 89.99</del></h5>
+                                <h5 class="price theme-color">${product.price}</h5>
                                 <div class="price-qty">
                                     <div class="counter-number">
                                         <div class="counter">
@@ -735,6 +735,7 @@
                             </div>
                         </div>
                     </div>
+                </c:forEach>
                 </div>
             </div>
 
