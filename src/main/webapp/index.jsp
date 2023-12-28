@@ -1,11 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Venuja
-  Date: 12/29/2023
-  Time: 12:18 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -676,30 +669,7 @@
             </div>
             <div class="tab-pane fade" id="cooking" role="tabpanel" aria-labelledby="cooking-tab">
                 <div class="row g-8">
-                    <div class="col-xxl-2 col-lg-3 col-md-4 col-6">
-                        <div class="product-box-4">
-                            <div class="product-image">
-                                <div class="label-flex">
-                                    <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                        <i class="fa-regular fa-heart"></i>
-                                    </button>
-                                </div>
-
-                                <a href="product-left.html">
-                                    <img src="assets/images/veg-3/cate1/1.png" class="img-fluid" alt="">
-                                </a>
-
-                                <ul class="option">
-                                    <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
-                                            <i class="fa-solid fa-tablet"></i>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <div class="col-xxl-2 col-lg-3 col-md-4 col-6">
                         <div class="product-box-4">

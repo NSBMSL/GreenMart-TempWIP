@@ -2,6 +2,7 @@ package Servlets;
 
 import Classes.Category;
 import Classes.CategoryDAO;
+import Classes.Product;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -19,6 +20,7 @@ public class CategoryServlet implements ServletContextListener {
             CategoryDAO categoryDAO = new CategoryDAO();
             List<Category> categories = categoryDAO.getAllCategories();
 
+           
             // Store the category list in the application scope
             ServletContext servletContext = sce.getServletContext();
             servletContext.setAttribute("categories", categories);

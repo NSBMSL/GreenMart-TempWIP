@@ -33,7 +33,7 @@ public class LatestProducts {
                     String category = resultSet.getString("category");
 
 
-                    System.out.println(id);
+                    System.out.println(name + " loaded as a product");
 
                     // Create a Product object and add it to the list
                     Product product = new Product(id, name, description, price, image, quantity,category);
