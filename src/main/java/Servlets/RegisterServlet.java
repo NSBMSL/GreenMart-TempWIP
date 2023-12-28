@@ -1,7 +1,6 @@
 package Servlets;
 
-
-import Classes.CustomerDao;
+import Classes.CustomerRegister;
 
 
 import javax.servlet.ServletException;
@@ -25,8 +24,8 @@ public class RegisterServlet extends HttpServlet {
         // Validate input
         if (username == null || username.trim().isEmpty() ||
                 email == null || email.trim().isEmpty() ||
-                password == null || password.trim().isEmpty() ||
-                username.length() > 10 || email.length() > 20 || password.length() > 10) {
+                password == null || password.trim().isEmpty()
+                ) {
             // Handle validation error, e.g., redirect to an error page
             String errorMessage = "Invalid input. Please check your data.";
             request.setAttribute("errorMessage", errorMessage);
@@ -34,11 +33,16 @@ public class RegisterServlet extends HttpServlet {
             return;
         }
 
+//        String verificationCode = UUID.randomUUID().toString();
+
+
+
         // Inserting data into the database
-        CustomerDao customerDao = new CustomerDao();
+        CustomerRegister customerDao = new CustomerRegister();
         try {
             customerDao.insertUser(username, email, password);
-            response.sendRedirect("success.jsp");
+            request.setAttribute("regi","ow ow pakaya register una hariyata,dn pakaya vage log viyan weesaawa" );
+            request.getRequestDispatcher("Login.jsp").forward(request, response);
         } catch (SQLException | ClassNotFoundException e) {
             request.setAttribute("errorMessage", e.getMessage());
             request.getRequestDispatcher("Register.jsp").forward(request, response);
