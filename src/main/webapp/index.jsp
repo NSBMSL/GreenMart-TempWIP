@@ -555,6 +555,7 @@
 </section>
 <!-- Product Sction End -->
 
+
 <!-- Banner Section Start -->
 <section class="banner-section">
     <div class="container-fluid-lg">
@@ -593,232 +594,6 @@
 </section>
 <!-- Banner Section End -->
 
-<!-- Product Section Start -->
-<section class="product-section-2">
-    <div class="container-fluid-lg">
-        <div class="row gy-sm-5 gy-4">
-            <div class="col-xxl-3 col-md-6">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="title title-border d-block">
-                            <h3>NEW PRODUCTS</h3>
-                        </div>
-
-                        <div class="product-category-1 arrow-slider-2">
-                            <div>
-                                <div class="row gy-sm-4 gy-3">
-                                    <div class="col-12">
-                                        <div class="product-box-4 wow fadeInUp">
-                                            <a href="#" class="product-image">
-                                                <img src="assets/images/veg-3/pro1/1.png" class="img-fluid" alt="">
-                                            </a>
-                                            <div class="product-details">
-                                                <ul class="rating">
-                                                    <li>
-                                                        <i data-feather="star" class="fill"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star" class="fill"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star"></i>
-                                                    </li>
-                                                </ul>
-                                                <a href="#">
-                                                    <h4 class="name">Tomato</h4>
-                                                </a>
-                                                <h5 class="price">LKR 75.20<del>LKR 65.21</del></h5>
-                                                <ul class="option">
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Add to Cart">
-                                                        <a href="#">
-                                                            <i class="iconly-Buy icli"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Quick View">
-                                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                           data-bs-target="#exampleModal">
-                                                            <i class="fa-solid fa-tablet"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Wishlist">
-                                                        <a href="#">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Compare">
-                                                        <a href="compare.html">
-                                                            <i class="iconly-Swap icli"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="product-box-4 wow fadeInUp" data-wow-delay="0.05s">
-                                            <a href="#" class="product-image">
-                                                <img src="assets/images/veg-3/pro1/2.png" class="img-fluid" alt="">
-                                            </a>
-                                            <div class="product-details">
-                                                <ul class="rating">
-                                                    <li>
-                                                        <i data-feather="star" class="fill"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star" class="fill"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star" class="fill"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star" class="fill"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star"></i>
-                                                    </li>
-                                                </ul>
-                                                <a href="#">
-                                                    <h4 class="name">Red onion</h4>
-                                                </a>
-                                                <h5 class="price">LKR 75.20<del>LKR 65.21</del></h5>
-                                                <ul class="option">
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Add to Cart">
-                                                        <a href="#">
-                                                            <i class="iconly-Buy icli"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Quick View">
-                                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                           data-bs-target="#exampleModal">
-                                                            <i class="fa-solid fa-tablet"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Wishlist">
-                                                        <a href="#">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Compare">
-                                                        <a href="compare.html">
-                                                            <i class="iconly-Swap icli"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-
-            
-
-                                    <div class="col-12">
-                                        <div class="product-box-4 wow fadeInUp pb-1" data-wow-delay="0.1s">
-                                            <a href="#" class="product-image">
-                                                <img src="assets/images/veg-3/pro1/12.png" class="img-fluid" alt="">
-                                            </a>
-                                            <div class="product-details">
-                                                <ul class="rating">
-                                                    <li>
-                                                        <i data-feather="star" class="fill"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star"></i>
-                                                    </li>
-                                                    <li>
-                                                        <i data-feather="star"></i>
-                                                    </li>
-                                                </ul>
-                                                <a href="#">
-                                                    <h4 class="name">Avacado</h4>
-                                                </a>
-                                                <h5 class="price">LKR 75.20<del>LKR 65.21</del></h5>
-                                                <ul class="option">
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Add to Cart">
-                                                        <a href="#">
-                                                            <i class="iconly-Buy icli"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Quick View">
-                                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                           data-bs-target="#exampleModal">
-                                                            <i class="fa-solid fa-tablet"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Wishlist">
-                                                        <a href="#">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Compare">
-                                                        <a href="compare.html">
-                                                            <i class="iconly-Swap icli"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Product Section End -->
-
-<!-- Banner Section Start -->
-<section class="banner-section">
-    <div class="container-fluid-lg">
-        <div class="row">
-            <div class="col-12">
-                <div class="banner-contain-3 section-b-space section-t-space hover-effect">
-                    <img src="assets/images/veg-3/banner/3.png" class="img-fluid bg-img" alt="">
-                    <div class="banner-detail p-center text-dark position-relative text-center p-0">
-                        <div>
-                            <h4 class="ls-expanded text-uppercase theme-color">Try Our New</h4>
-                            <h2 class="my-3">100% Organic Best Quality Best Price</h2>
-                            <h4 class="text-content fw-300">Best GreenMart Food Quality</h4>
-                            <button class="btn theme-bg-color mt-sm-4 btn-md mx-auto text-white fw-bold"
-                                    onclick="location.href = '#';">Shop Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Banner Section End -->
 
 <!-- Product Sction Start -->
 <section class="product-section">
@@ -2107,6 +1882,35 @@
     </div>
 </section>
 <!-- Product Sction End -->
+
+
+
+
+<!-- Banner Section Start -->
+<section class="banner-section">
+    <div class="container-fluid-lg">
+        <div class="row">
+            <div class="col-12">
+                <div class="banner-contain-3 section-b-space section-t-space hover-effect">
+                    <img src="assets/images/veg-3/banner/3.png" class="img-fluid bg-img" alt="">
+                    <div class="banner-detail p-center text-dark position-relative text-center p-0">
+                        <div>
+                            <h4 class="ls-expanded text-uppercase theme-color">Try Our New</h4>
+                            <h2 class="my-3">100% Organic Best Quality Best Price</h2>
+                            <h4 class="text-content fw-300">Best GreenMart Food Quality</h4>
+                            <button class="btn theme-bg-color mt-sm-4 btn-md mx-auto text-white fw-bold"
+                                    onclick="location.href = '#';">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner Section End -->
+
+
+
 
 
 <!-- Newsletter Section Start -->
