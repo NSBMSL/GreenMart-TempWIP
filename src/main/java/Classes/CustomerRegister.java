@@ -5,10 +5,10 @@ import Database.Dbconn;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class CustomerDao {
+public class CustomerRegister {
 
     public void insertUser(String username, String email, String password) throws SQLException, ClassNotFoundException {
-        String sql = "INSERT INTO customers (username,email , password) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO customer (username, email, password) VALUES (?, ?, ?)";
         Dbconn dbconn = new Dbconn();
         try {
             dbconn.openConnection();

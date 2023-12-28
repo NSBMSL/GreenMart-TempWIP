@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -752,83 +753,86 @@
         <div class="title">
             <h2>Top Products</h2>
         </div>
+        <div  style="overflow: scroll; height: 300px; display: flex;">
 
-        <div class="slider-6 img-slider slick-slider-1 arrow-slider">
-            <div>
-                <div class="product-box-4 wow fadeInUp">
-                    <div class="product-image">
-                        <div class="label-flex">
-                            <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
-                                <i class="fa-regular fa-heart"></i>
-                            </button>
-                        </div>
+                <c:forEach var="product" items="${productList}">
+                    <div>
 
-                        <a href="#">
-                            <img src="assets/images/veg-3/cate1/1.png" class="img-fluid" alt="">
-                        </a>
-
-                        <ul class="option">
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
-                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
-                                    <i class="fa-solid fa-tablet"></i>
-                                </a>
-                            </li>
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
-                                <a href="compare.html">
-                                    <i class="iconly-Swap icli"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="product-detail">
-                        <ul class="rating">
-                            <li>
-                                <i data-feather="star" class="fill"></i>
-                            </li>
-                            <li>
-                                <i data-feather="star" class="fill"></i>
-                            </li>
-                            <li>
-                                <i data-feather="star" class="fill"></i>
-                            </li>
-                            <li>
-                                <i data-feather="star" class="fill"></i>
-                            </li>
-                            <li>
-                                <i data-feather="star"></i>
-                            </li>
-                        </ul>
-                        <a href="#">
-                            <h5 class="name">Eggplant</h5>
-                        </a>
-                        <h5 class="price theme-color">LKR 70.21<del>LKR 65.25</del></h5>
-                        <div class="price-qty">
-                            <div class="counter-number">
-                                <div class="counter">
-                                    <div class="qty-left-minus" data-type="minus" data-field="">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </div>
-                                    <input class="form-control input-number qty-input" type="text" name="quantity"
-                                           value="0">
-                                    <div class="qty-right-plus" data-type="plus" data-field="">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </div>
-                                </div>
+                    <div class="product-box-4 wow fadeInUp">
+                        <div class="product-image">
+                            <div class="label-flex">
+                                <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
                             </div>
 
-                            <button class="buy-button buy-button-2 btn btn-cart">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
+                            <a href="#">
+                                <img src="assets/images/veg-3/cate1/1.png" class="img-fluid" alt="">
+                            </a>
+
+                            <ul class="option">
+                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                        <i class="fa-solid fa-tablet"></i>
+                                    </a>
+                                </li>
+                                <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                    <a href="compare.html">
+                                        <i class="iconly-Swap icli"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="product-detail">
+                            <ul class="rating">
+                                <li>
+                                    <i data-feather="star" class="fill"></i>
+                                </li>
+                                <li>
+                                    <i data-feather="star" class="fill"></i>
+                                </li>
+                                <li>
+                                    <i data-feather="star" class="fill"></i>
+                                </li>
+                                <li>
+                                    <i data-feather="star" class="fill"></i>
+                                </li>
+                                <li>
+                                    <i data-feather="star"></i>
+                                </li>
+                            </ul>
+                            <a href="#">
+                                <h5 class="name">${product.name}</h5>
+                            </a>
+                            <h5 class="price theme-color">${product.price}</h5>
+                            <div class="price-qty">
+                                <div class="counter-number">
+                                    <div class="counter">
+                                        <div class="qty-left-minus" data-type="minus" data-field="">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </div>
+                                        <input class="form-control input-number qty-input" type="text" name="quantity" value="0">
+                                        <div class="qty-right-plus" data-type="plus" data-field="">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="buy-button buy-button-2 btn btn-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
+                    </div>
+                </c:forEach>
 
         </div>
-        </div>
+
+
     </div>
+
 </section>
 <!-- Product Sction End -->
 
