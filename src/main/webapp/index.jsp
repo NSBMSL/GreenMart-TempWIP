@@ -460,13 +460,14 @@
                                             <div class="qty-left-minus" data-type="minus" data-field="">
                                                 <i class="fa-solid fa-minus"></i>
                                             </div>
-                                            <input class="form-control input-number qty-input" type="text" name="quantity" value="0">
-                                            <div class="qty-right-plus" data-type="plus" data-field="">
+                                            <input id="quantity-input" class="form-control input-number qty-input" type="text" name="quantity" value="0">
+                                            <div id="add-button" class="qty-right-plus" data-type="plus" data-field="">
                                                 <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="buy-button buy-button-2 btn btn-cart">
+                                   
+                                    <button onclick="addToCart('${product.name}', '${product.price}', document.getElementById('quantity-input').value)" class="buy-button buy-button-2 btn btn-cart">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -2616,31 +2617,13 @@
 <!-- Cookie Bar Box End -->
 
 <!-- Items section Start -->
+
 <div class="button-item">
-    <button class="item-btn btn text-white">
+    <a href="cart.html" class="item-btn btn text-white">
         <i class="fa-solid fa-bag-shopping"></i>
-    </button>
+    </a>
 </div>
-<div class="item-section">
-    <button class="close-button">
-        <i class="fas fa-times"></i>
-    </button>
-    <h6>
-        <i class="fa-solid fa-bag-shopping"></i>
-        <span>5 Items</span>
-    </h6>
-    <ul class="items-image">
-        <li>
-            <img src="assets/images/veg-3/cate1/1.png" alt="">
-        </li>
-        <li>
-            <img src="assets/images/veg-3/cate1/2.png" alt="">
-        </li>
-        <li>+3</li>
-    </ul>
-    <button onclick="location.href = 'cart.html';" class="btn bg-white theme-color btn-sm fw-bold">LKR
-        20.70</button>
-</div>
+
 <!-- Items section End -->
 
 <!-- Tap to top start -->
@@ -2658,6 +2641,87 @@
 <!-- Bg overlay Start -->
 <div class="bg-overlay"></div>
 <!-- Bg overlay End -->
+<script>
+
+    function addToCart(productName, price) {
+        // Get the quantity from the input field
+        let quantity = document.getElementById('quantity-input').value;
+        // Get existing cart items from local storage or initialize an empty array
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        // Check if the item is already in the cart
+        const isItemInCart = cartItems.some(item => item.productName === productName);
+
+        if (isItemInCart) {
+            // Show a message if the item is already in the cart
+            alert(`"${productName}" is already in the cart.`);
+        } else {
+            // Add the new item to the cart
+            const newItem = {
+                productName: productName,
+                price: price,
+                quantity: quantity
+            };
+            cartItems.push(newItem);
+
+            // Save the updated cart back to local storage
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+            // Alert to indicate that the item has been added to the cart (you can customize this part)
+            alert(`"${productName}" has been added to the cart.`);
+
+            // Update the cart display
+            updateCartDisplay();
+        }
+    }
+
+    function removeFromCart(index) {
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        // Remove the item at the specified index
+        cartItems.splice(index, 1);
+
+        // Save the updated cart back to local storage
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+        // Update the cart display
+        updateCartDisplay();
+    }
+
+    function updateCartDisplay() {
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        const cartItemsContainer = document.getElementById("cart-items");
+        const totalPriceElement = document.getElementById("total-price");
+        const quantityContainer = document.getElementById("quantity");
+
+        // Clear the existing content
+        cartItemsContainer.innerHTML = "";
+
+        // Display each item in the cart with a "Remove" button
+        cartItems.forEach((item, index) => {
+            const itemElement = document.createElement("tr");
+        
+            itemElement.innerHTML = `
+
+            `
+            cartItemsContainer.appendChild(itemElement);
+        });
+
+        // Calculate and display the total price
+        const totalPrice = cartItems.reduce(
+            (total, item) => total + item.price,
+            0
+        );
+        totalPriceElement.textContent = totalPrice.toFixed(2);
+    }
+
+    // Initial update when the page loads
+    updateCartDisplay();
+
+
+
+</script>
+
 
 <!-- latest jquery-->
 <script src="assets/js/jquery-3.6.0.min.js"></script>

@@ -68,7 +68,7 @@
                 <div class="sidebar">
                     <div class="sidebar__item">
                         <h4>Department</h4>
-                        <ul>
+                        <ul id="cart-items">
                             <c:forEach var="category"  items="${categories}">
                                 <li><a href="#">${category.name}</a></li>
                             </c:forEach>

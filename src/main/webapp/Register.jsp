@@ -103,7 +103,7 @@
                                         <i class="fa-solid fa-house"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item active">Log In</li>
+                                <li class="breadcrumb-item active" aria-current="page">Register</li>
                             </ol>
                         </nav>
                     </div>
@@ -242,6 +242,7 @@
 
     <!-- script js -->
     <script src="  assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/6e0728b28d.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
