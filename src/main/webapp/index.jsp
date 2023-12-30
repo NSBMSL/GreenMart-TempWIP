@@ -388,16 +388,16 @@
                                                 <div class="qty-left-minus" data-type="minus" data-field="">
                                                     <i class="fa-solid fa-minus"></i>
                                                 </div>
-                                                <input class="form-control input-number qty-input" type="text"
-                                                       name="quantity" value="0">
-                                                <div class="qty-right-plus" data-type="plus" data-field="">
-                                                    <i class="fa-solid fa-plus"></i>
-                                                </div>
+                                                <input class="form-control input-number qty-input" type="text" id="quantity-input" name="quantity" value="1">
+                                            <div class="qty-right-plus" data-type="plus" data-field="">
+                                                <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </div>
-                                        <button class="buy-button buy-button-2 btn btn-cart">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                        </button>
+                                    </div>
+                                    
+                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>  
                                     </div>
                                 </div>
                             </div>
@@ -460,16 +460,16 @@
                                             <div class="qty-left-minus" data-type="minus" data-field="">
                                                 <i class="fa-solid fa-minus"></i>
                                             </div>
-                                            <input id="quantity-input" class="form-control input-number qty-input" type="text" name="quantity" value="0">
-                                            <div id="add-button" class="qty-right-plus" data-type="plus" data-field="">
+                                            <input class="form-control input-number qty-input" type="text" id="quantity-input" name="quantity" value="1">
+                                            <div class="qty-right-plus" data-type="plus" data-field="">
                                                 <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </div>
                                     </div>
-                                   
-                                    <button onclick="addToCart('${product.name}', '${product.price}', document.getElementById('quantity-input').value)" class="buy-button buy-button-2 btn btn-cart">
+                                    
+                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart">
                                         <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
+                                    </button>                                    
                                 </div>
                             </div>
                         </div>
@@ -532,15 +532,16 @@
                                             <div class="qty-left-minus" data-type="minus" data-field="">
                                                 <i class="fa-solid fa-minus"></i>
                                             </div>
-                                            <input class="form-control input-number qty-input" type="text" name="quantity" value="0">
+                                            <input class="form-control input-number qty-input" type="text" id="quantity-input" name="quantity" value="1">
                                             <div class="qty-right-plus" data-type="plus" data-field="">
                                                 <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="buy-button buy-button-2 btn btn-cart">
+                                    
+                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart">
                                         <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
+                                    </button>  
                                 </div>
                             </div>
                         </div>
@@ -603,15 +604,16 @@
                                                 <div class="qty-left-minus" data-type="minus" data-field="">
                                                     <i class="fa-solid fa-minus"></i>
                                                 </div>
-                                                <input class="form-control input-number qty-input" type="text" name="quantity" value="0">
-                                                <div class="qty-right-plus" data-type="plus" data-field="">
-                                                    <i class="fa-solid fa-plus"></i>
-                                                </div>
+                                                <input class="form-control input-number qty-input" type="text" id="quantity-input" name="quantity" value="1">
+                                            <div class="qty-right-plus" data-type="plus" data-field="">
+                                                <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </div>
-                                        <button class="buy-button buy-button-2 btn btn-cart">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                        </button>
+                                    </div>
+                                    
+                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>  
                                     </div>
                                 </div>
                             </div>
@@ -2310,110 +2312,7 @@
 <%@ include file="Footer.jsp" %>
 <!-- Footer End -->
 
-<!-- Quick View Modal Box Start -->
-<div class="modal fade theme-modal view-modal" id="view" tabindex="-1" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
-        <div class="modal-content">
-            <div class="modal-header p-0">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row g-sm-4 g-2">
-                    <div class="col-lg-6">
-                        <div class="slider-image">
-                            <img src="assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
-                                 alt="">
-                        </div>
-                    </div>
 
-                    <div class="col-lg-6">
-                        <div class="right-sidebar-modal">
-                            <h4 class="title-name">Peanut Butter Bite Premium Butter Cookies 600 g</h4>
-                            <h4 class="price">LKR 36.99</h4>
-                            <div class="product-rating">
-                                <ul class="rating">
-                                    <li>
-                                        <i data-feather="star" class="fill"></i>
-                                    </li>
-                                    <li>
-                                        <i data-feather="star" class="fill"></i>
-                                    </li>
-                                    <li>
-                                        <i data-feather="star" class="fill"></i>
-                                    </li>
-                                    <li>
-                                        <i data-feather="star" class="fill"></i>
-                                    </li>
-                                    <li>
-                                        <i data-feather="star"></i>
-                                    </li>
-                                </ul>
-                                <span class="ms-2">8 Reviews</span>
-                                <span class="ms-2 text-danger">6 sold in last 16 hours</span>
-                            </div>
-
-                            <div class="product-detail">
-                                <h4>Product Details :</h4>
-                                <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
-                                    Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
-                                    Marshmallow pie sweet sweet roll sesame snaps tiramisu jelly bear claw. Bonbon
-                                    muffin I love carrot cake sugar plum dessert bonbon.</p>
-                            </div>
-
-                            <ul class="brand-list">
-                                <li>
-                                    <div class="brand-box">
-                                        <h5>Brand Name:</h5>
-                                        <h6>Black Forest</h6>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="brand-box">
-                                        <h5>Product Code:</h5>
-                                        <h6>W0690034</h6>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="brand-box">
-                                        <h5>Product Type:</h5>
-                                        <h6>White Cream Cake</h6>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="select-size">
-                                <h4>Cake Size :</h4>
-                                <select class="form-select select-form-size">
-                                    <option selected>Select Size</option>
-                                    <option value="1.2">1/2 KG</option>
-                                    <option value="0">1 KG</option>
-                                    <option value="1.5">1/5 KG</option>
-                                    <option value="red">Red Roses</option>
-                                    <option value="pink">With Pink Roses</option>
-                                </select>
-                            </div>
-
-                            <div class="modal-button">
-                                <button onclick="location.href = 'cart.html';"
-                                        class="btn btn-md add-cart-button icon">Add
-                                    To Cart</button>
-                                <button onclick="location.href = 'product-left.html';"
-                                        class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
-                                    View More Details</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Quick View Modal Box End -->
 
 <!-- Location Modal Start -->
 <div class="modal location-modal fade theme-modal" id="locationModal" tabindex="-1"
@@ -2596,25 +2495,7 @@
 </div>
 <!-- Deal Box Modal End -->
 
-<!-- Cookie Bar Box Start -->
-<div class="cookie-bar-box">
-    <div class="cookie-box">
-        <div class="cookie-image">
-            <img src="assets/images/cookie-bar.png" class="blur-up lazyload" alt="">
-            <h2>Cookies!</h2>
-        </div>
 
-        <div class="cookie-contain">
-            <h5 class="text-content">We use cookies to make your experience better</h5>
-        </div>
-    </div>
-
-    <div class="button-group">
-        <button class="btn privacy-button">Privacy Policy</button>
-        <button class="btn ok-button">OK</button>
-    </div>
-</div>
-<!-- Cookie Bar Box End -->
 
 <!-- Items section Start -->
 
@@ -2642,38 +2523,37 @@
 <div class="bg-overlay"></div>
 <!-- Bg overlay End -->
 <script>
+function addToCart(clickedButton, productName, price, productId) {
+    // Find the associated quantity input
+    let quantityInput = clickedButton.parentNode.querySelector('.qty-input');
 
-    function addToCart(productName, price) {
-        // Get the quantity from the input field
-        let quantity = document.getElementById('quantity-input').value;
-        // Get existing cart items from local storage or initialize an empty array
-        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    let quantity = parseInt(quantityInput.value);
 
-        // Check if the item is already in the cart
-        const isItemInCart = cartItems.some(item => item.productName === productName);
+    // Get existing cart items from local storage or initialize an empty array
+    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
-        if (isItemInCart) {
-            // Show a message if the item is already in the cart
-            alert(`"${productName}" is already in the cart.`);
-        } else {
-            // Add the new item to the cart
-            const newItem = {
-                productName: productName,
-                price: price,
-                quantity: quantity
-            };
-            cartItems.push(newItem);
+    // Check if the item is already in the cart
+    const existingItem = cartItems.find(item => item.productName === productName);
 
-            // Save the updated cart back to local storage
-            localStorage.setItem("cartItems", JSON.stringify(cartItems));
-
-            // Alert to indicate that the item has been added to the cart (you can customize this part)
-            alert(`"${productName}" has been added to the cart.`);
-
-            // Update the cart display
-            updateCartDisplay();
-        }
+    if (existingItem) {
+        // Update the quantity of the existing item
+        existingItem.quantity += quantity;
+    } else {
+        // Add the new item to the cart
+        const newItem = {
+            productName: productName,
+            price: price,
+            quantity: quantity
+        };
+        cartItems.push(newItem);
     }
+
+    // Save the updated cart back to local storage
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+    // Reset the quantity input field to 1
+    quantityInput.value = 1;
+}
 
     function removeFromCart(index) {
         let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
