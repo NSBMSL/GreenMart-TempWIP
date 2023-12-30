@@ -422,20 +422,44 @@
                                 <h4  id="total-price" class="price theme-color"></h4>
                             </li>
                         </ul>
-
+                        <div id="paypal-button-container">
                         <div class="button-group cart-button">
                             <ul>
-                                <li>
-                                    <button onclick="location.href = 'checkout.html';"
-                                        class="btn btn-animation proceed-btn fw-bold">Process To Checkout</button>
-                                </li>
+                                <div class="paypal-button-container button-group cart-button">
+                                    <button onclick="paypalCheckout()" class="btn btn-animation proceed-btn fw-bold">Process To Checkout</button>
 
+                                    <script>
+                                        function paypalCheckout() {
+                                            paypal.Buttons({
+                                                createOrder: function(data, actions) {
+                                                    // Set up the transaction details
+                                                    return actions.order.create({
+                                                        purchase_units: [{
+                                                            amount: {
+                                                                value: document.getElementById('total-price').innerText // Replace with the total amount from your shopping cart
+                                                            }
+                                                        }]
+                                                    });
+                                                },
+                                                onApprove: function(data, actions) {
+                                                    // Capture the funds when the user approves the transaction
+                                                    return actions.order.capture().then(function(details) {
+                                                        // Handle the successful payment (e.g., update order status)
+                                                        alert('Transaction completed by ' + details.payer.name.given_name);
+                                                        
+                                                    });
+                                                }
+                                            }).render('#paypal-button-container');
+                                        }
+                                    </script>
+                                </div>
                                 <li>
                                     <button onclick="location.href = 'index.jsp';"
                                         class="btn btn-light shopping-button text-dark">
                                         <i class="fa-solid fa-arrow-left-long"></i>Return To Shopping</button>
                                 </li>
                             </ul>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -621,7 +645,8 @@
     }
 </script>
 
-        
+<script src="https://www.paypal.com/sdk/js?client-id=ASoxhwAHB_tEPjdDP5HhdGdDcqFlImnCKrw0OV6tGB60fCyC9aZe0SDbNPOwsmLURdyvl2i3u_aTDBWA"></script>
+ 
    
     <!-- Bg overlay Start -->
     <div class="bg-overlay"></div>
