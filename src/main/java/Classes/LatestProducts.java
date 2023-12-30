@@ -44,7 +44,7 @@ public class LatestProducts {
             throw new RuntimeException(e);
         } finally {
             // Close the database connection
-            dbconn.closeConnection();
+//            dbconn.closeConnection();
         }
 
         return products;

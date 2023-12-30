@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class CustomerLogin {
 
     public boolean validate(String email, String password) {
-        String sql = "SELECT email, password, username FROM customer WHERE email=? AND password=?";
+        String sql = "SELECT email, password, username FROM customers WHERE email=? AND password=?";
         Dbconn dbconn = new Dbconn();
 
         try {

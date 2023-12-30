@@ -59,271 +59,9 @@
 <!-- Loader End -->
 
 <!-- Header Start -->
+<%@ include file="Header.jsp" %>
 
 
-
-<!-- Header Start -->
-<header class="header-2">
-    <div class="header-notification theme-bg-color overflow-hidden py-2">
-        <div class="notification-slider">
-            <div>
-                <div class="timer-notification text-center">
-                    <h6><strong class="me-1">Welcome to GreenMart!</strong>Wrap new offers/gift
-                        every signle day on Weekends.<strong class="ms-1">
-                        </strong>
-                    </h6>
-                </div>
-            </div>
-
-            <div>
-                <div class="timer-notification text-center">
-                    <h6>Something you love is now on sale!<a href="#" class="text-white">Buy
-                        Now
-                        !</a>
-                    </h6>
-                </div>
-            </div>
-        </div>
-        <button class="btn close-notification"><span>Close</span> <i class="fas fa-times"></i></button>
-    </div>
-    <div class="top-nav top-header sticky-header sticky-header-3">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="navbar-top">
-                        <button class="navbar-toggler d-xl-none d-block p-0 me-3" type="button"
-                                data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
-                                <span class="navbar-toggler-icon">
-                                    <i class="fa-solid fa-bars"></i>
-
-                                </span>
-                        </button>
-                        <a href="#" class="web-logo nav-logo">
-                            <img src="assets/images/logo/3.png" class="img-fluid blur-up lazyload" alt="">
-                        </a>
-
-                        <div class="search-full">
-                            <div class="input-group">
-                                    <span class="input-group-text">
-                                        <i data-feather="search" class="font-light"></i>
-                                    </span>
-                                <label>
-                                    <input type="text" class="form-control search-type" placeholder="Search here..">
-                                </label>
-                                <span class="input-group-text close-search">
-                                        <i data-feather="x" class="font-light"></i>
-                                    </span>
-                            </div>
-                        </div>
-
-
-
-                        <div class="rightside-menu">
-                            <div class="dropdown-dollar">
-                                <div class="dropdown">
-                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span>Language</span>
-                                        <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li>
-                                            <a id="eng" class="dropdown-item" href="javascript:void(0)">English</a>
-                                        </li>
-                                        <li>
-                                            <a id="hin" class="dropdown-item" href="javascript:void(0)">Hindi</a>
-                                        </li>
-                                        <li>
-                                            <a id="guj" class="dropdown-item" href="javascript:void(0)">Gujarati</a>
-                                        </li>
-                                        <li>
-                                            <a id="arb" class="dropdown-item" href="javascript:void(0)">Arbic</a>
-                                        </li>
-                                        <li>
-                                            <a id="rus" class="dropdown-item" href="javascript:void(0)">Rusia</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="javascript:void(0)">Chinese</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-
-
-                                <div class="option-list">
-                                    <ul>
-                                        <li>
-                                            <a href="javascript:void(0)" class="header-icon user-icon search-icon">
-                                                <i class="iconly-Profile icli"></i>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="javascript:void(0)" class="header-icon search-box search-icon">
-                                                <i class="fa-solid fa-magnifying-glass"></i>
-                                            </a>
-                                        </li>
-
-
-                                        <li>
-                                            <a href="javascript:void(0)" class="header-icon swap-icon">
-                                                <button id="darkModeButton" class="btn darkmode">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </button>
-
-                                            </a>
-                                        </li>
-
-                                        <li class="onhover-dropdown">
-                                            <a href="#" class="header-icon fa-solid fa-bag-shopping">
-                                                <small class="badge-number">2</small>
-
-                                            </a>
-                                            <div class="onhover-div">
-                                                <ul class="cart-list">
-                                                    <li>
-                                                        <div class="drop-cart">
-                                                            <a href="#" class="drop-image">
-                                                                <img src="assets/images/vegetable/product/1.png"
-                                                                     class="blur-up lazyload" alt="">
-                                                            </a>
-
-                                                            <div class="drop-contain">
-                                                                <a href="#">
-                                                                    <h5>Fantasy Crunchy Choco Chip Cookies</h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> LKR 80.58</h6>
-                                                                <button class="close-button">
-                                                                    <i class="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="drop-cart">
-                                                            <a href="#" class="drop-image">
-                                                                <img src="assets/images/vegetable/product/2.png"
-                                                                     class="blur-up lazyload" alt="">
-                                                            </a>
-
-                                                            <div class="drop-contain">
-                                                                <a href="#">
-                                                                    <h5>Peanut Butter Bite Premium Butter Cookies
-                                                                        600 g
-                                                                    </h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> LKR 25.68</h6>
-                                                                <button class="close-button">
-                                                                    <i class="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="price-box">
-                                                    <h5>Price :</h5>
-                                                    <h4 class="theme-color fw-bold">LKR 106.58</h4>
-                                                </div>
-
-                                                <div class="button-group">
-                                                    <a href="#" class="btn btn-sm cart-button">View Cart</a>
-                                                    <a href="#" class="btn btn-sm cart-button theme-bg-color
-                                                        text-white">Checkout</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="right-side onhover-dropdown">
-                                            <div class="delivery-login-box">
-                                                <div class="delivery-icon">
-                                                    <i data-feather="user"></i>
-                                                </div>
-                                            </div>
-
-                                            <div class="onhover-div onhover-div-login">
-                                                <ul class="user-box-name">
-                                                    <li class="product-box-contain">
-                                                        <i></i>
-                                                        <a href="#">Log In</a>
-                                                    </li>
-
-                                                    <li class="product-box-contain">
-                                                        <a href="#">Register</a>
-                                                    </li>
-
-                                                    <li class="product-box-contain">
-                                                        <a href="#">Forgot Password</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="main-nav">
-
-
-                        <div class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
-                            <div class="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
-                                <div class="offcanvas-header navbar-shadow">
-                                    <h5>Menu</h5>
-                                    <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a class="add nav-link nav-link-2" href="#">Home</a>
-                                        </li>
-
-
-
-                                        <li class="nav-item">
-                                            <a class="nav-link nav-link-2" href="#">Shop</a>
-                                        </li>
-
-
-
-
-
-                                        <li class="nav-item">
-                                            <a class="nav-link nav-link-2" href="#">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="right-nav">
-                            <div class="nav-number">
-                                <img src="assets/images/icon/music.png" class="img-fluid blur-up lazyload" alt="">
-                                <span> Contact Us </span>
-                            </div>
-                            <a href="javascript:void(0)" class="btn theme-bg-color ms-3 fire-button"
-                               data-bs-toggle="modal" data-bs-target="#deal-box">
-                                <div class="fire">
-                                    <img alt="test" src="assets/images/icon/hot-sale.png" class="img-fluid">
-                                </div>
-                                <span>Hot Deals</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
 
 <!-- Header End -->
 
@@ -583,10 +321,10 @@
                             type="button"> Cooking</button>
                 </li>
 
-                <!-- <li class="nav-item">
+                 <li class="nav-item">
                     <button class="nav-link btn" id="fruits-tab" data-bs-toggle="tab" data-bs-target="#fruits"
-                        type="button">Fruits & Vegetables</button>
-                </li> -->
+                        type="button">Fruits</button>
+                </li>
 
                 <li class="nav-item">
                     <button class="nav-link btn" id="beverage-tab" data-bs-toggle="tab" data-bs-target="#beverage"
@@ -807,6 +545,77 @@
                         </div>
                     </div>
                 </c:forEach>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="fruits" role="tabpanel" aria-labelledby="fruits-tab">
+                <div class="row g-8">
+
+                    <c:forEach var="product" items="${fruitsProducts}">
+                        <div class="col-xxl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product-box-4">
+                                <div class="product-image">
+                                    <div class="label-flex">
+                                        <button class="btn p-0 wishlist btn-wishlist notifi-wishlist">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                    </div>
+
+                                    <a href="product-left.html">
+                                        <img src="assets/images/veg-3/cate1/2.png" class="img-fluid" alt="">
+                                    </a>
+
+                                    <ul class="option">
+                                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                                <i class="fa-solid fa-tablet"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="product-detail">
+                                    <ul class="rating">
+                                        <!-- ... (rating stars) ... -->
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star"></i>
+                                        </li>
+                                    </ul>
+                                    <a href="product-left.html">
+                                        <h5 class="name">${product.name}</h5>
+                                    </a>
+                                    <h5 class="price theme-color">${product.price}</h5>
+                                    <div class="price-qty">
+                                        <div class="counter-number">
+                                            <div class="counter">
+                                                <div class="qty-left-minus" data-type="minus" data-field="">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </div>
+                                                <input class="form-control input-number qty-input" type="text" name="quantity" value="0">
+                                                <div class="qty-right-plus" data-type="plus" data-field="">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="buy-button buy-button-2 btn btn-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </c:forEach>
                 </div>
             </div>
 
@@ -2497,107 +2306,7 @@
 <!-- Newsletter Section End -->
 
 <!-- Footer Start -->
-<footer class="section-t-space footer-section-2">
-    <div class="container-fluid-lg">
-        <div class="main-footer">
-            <div class="row g-md-4 gy-sm-5 gy-2">
-                <div class="col-xxl-3 col-xl-4 col-sm-6">
-                    <a href="index.html" class="foot-logo">
-                        <img src="assets/images/logo/3.png" class="img-fluid" alt="">
-                    </a>
-                    <p class="information-text">it is a long established fact that a reader will be distracted
-                        by the readable content.</p>
-
-
-                    <div class="social-app mt-sm-4 mt-3 mb-4">
-
-                    </div>
-                </div>
-
-                <div class="col-xxl-2 col-xl-4 col-sm-6">
-                    <div class="footer-title">
-                        <h4>About GreenMart</h4>
-                    </div>
-                    <ul class="footer-list footer-contact mb-sm-0 mb-3">
-                        <li>
-                            <a href="about-us.html" class="footer-contain-2">
-                                <i class="fas fa-angle-right"></i>About Us</a>
-                        </li>
-                        <li>
-                            <a href="contact-us.html" class="footer-contain-2">
-                                <i class="fas fa-angle-right"></i>Contact Us</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-
-
-
-                <div class="col-xxl-3 col-xl-4 col-sm-6">
-                    <div class="footer-title">
-                        <h4>Store infomation</h4>
-                    </div>
-                    <ul class="footer-address footer-contact">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <div class="inform-box flex-start-box">
-                                    <i data-feather="map-pin"></i>
-                                    <p>GreenMart</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="javascript:void(0)">
-                                <div class="inform-box">
-                                    <i data-feather="phone"></i>
-                                    <p>Call us: 0115 445 000</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="javascript:void(0)">
-                                <div class="inform-box">
-                                    <i data-feather="mail"></i>
-                                    <p>Email Us: Support@GreenMart.com</p>
-                                </div>
-                            </a>
-                        </li>
-
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="sub-footer section-small-space">
-            <div class="left-footer">
-                <p>2023 Copyright | NSBM </p>
-            </div>
-            <div class="right-footer">
-                <ul class="payment-box">
-                    <li>
-                        <img src="assets/images/icon/paymant/visa.png" alt="">
-                    </li>
-                    <li>
-                        <img src="assets/images/icon/paymant/discover.png" alt="">
-                    </li>
-                    <li>
-                        <img src="assets/images/icon/paymant/american.png" alt="">
-                    </li>
-                    <li>
-                        <img src="assets/images/icon/paymant/master-card.png" alt="">
-                    </li>
-                    <li>
-                        <img src="assets/images/icon/paymant/giro-pay.png" alt="">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
+<%@ include file="Footer.jsp" %>
 <!-- Footer End -->
 
 <!-- Quick View Modal Box Start -->

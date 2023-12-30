@@ -5,18 +5,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Ogani Template">
-    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="description" content="GreenMart Template">
+    <meta name="keywords" content="GreenMart, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <title>GreenMart | Template</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/vendors/slick/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
     <link rel="stylesheet" href="css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
@@ -51,7 +51,7 @@
 
         .show-sidebar {
             right: 0;
-            margin-right: 300px;
+            /*margin-right: 300px;*/
         }
 
         .sidebar-content {
@@ -127,6 +127,8 @@
 </head>
 
 <body>
+<p>${errorMessage}</p>
+<p>${messege}</p>
 
 <!-- Page content with Bootstrap grid system -->
 <div class="container-fluid">
@@ -186,16 +188,16 @@
             <div class="sidebar-content">
                 <h2 style="margin-bottom: 20px;">Product Management</h2>
 
-                <form>
-                    <input type="text" class="form-control" id="productId" placeholder="ID">
-                    <input type="text" class="form-control" id="productName" placeholder="Name">
-                    <input type="text" class="form-control" id="productQuantity" placeholder="Quantity">
-                    <input type="text" class="form-control" id="productDescription" placeholder="Description">
-                    <input type="text" class="form-control" id="productPrice" placeholder="Price">
-                    <input type="text" class="form-control" id="productCategory" placeholder="Category">
-                    <input type="text" class="form-control" id="productImage" placeholder="Image">
-                    <input type="text" class="form-control" id="productWeight" placeholder="Weight">
-                    <button class="btn btn-primary" onclick="addProduct()">Add</button>
+                <form action="AddProduct" method="get">
+
+                    <input type="text" class="form-control" id="productName" placeholder="Name" name="name">
+                    <input type="text" class="form-control" id="productQuantity" placeholder="Quantity" name="quantity">
+                    <input type="text" class="form-control" id="productDescription" placeholder="Description" name="description">
+                    <input type="text" class="form-control" id="productPrice" placeholder="Price" name="price">
+                    <input type="text" class="form-control" id="productCategory" placeholder="Category" name="category">
+<%--                    <input type="text" class="form-control" id="productImage" placeholder="Image" name="">--%>
+
+                    <button class="btn btn-primary" type="submit">Add</button>
                     <button class="btn btn-warning" onclick="updateProduct()">Update</button>
                     <button class="btn btn-danger" onclick="deleteProduct()">Delete</button>
                 </form>
