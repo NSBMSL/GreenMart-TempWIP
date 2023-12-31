@@ -204,7 +204,19 @@
                                 </div>
                                 <span>Hot Deals</span>
                             </a>
+
+                                                <% String userRole = (String) session.getAttribute("userRole"); %>
+                    <% if ("admin".equals(userRole)) { %>
+                        
+                            <a href="profile.jsp" class="btn theme-bg-color ms-3 fire-button">
+                                <div class="fire">
+                                    <img alt="test" src="assets/images/icon/icons8-admin-100.png" class="img-fluid">
+                                </div>
+                                <span>Admin</span>
+                            </a>
+                            <% } %>
                         </div>
+                        
                     </div>
                 </div>
             </div>

@@ -24,6 +24,7 @@ public class LoginServlet extends HttpServlet {
 
         String email = req.getParameter("email");
         String password =  req.getParameter("password");
+        
 
         // Validate input
         if (
@@ -40,20 +41,24 @@ public class LoginServlet extends HttpServlet {
         CustomerLogin customerLogin = new CustomerLogin();
         boolean isValidUser = customerLogin.validate(email, password);
 
-        if (isValidUser) {
-            HttpSession session = req.getSession();
+                if (isValidUser) {
+                    HttpSession session = req.getSession();
 
-            // Set a session attribute named "username"
-            session.setAttribute("email", email);
+                    // Set a session attribute named "username"
+                    session.setAttribute("email", email);
 
-            // You can also set other attributes as needed
-//            session.setAttribute("userRole", "admin");
+                    // You can also set other attributes as needed
+                    if (email.equals("gsahindu@gmail.com")) {
+                        session.setAttribute("userRole", "admin");
+                    }
+                    else {
+                        session.setAttribute("userRole", "customer");
+                    }
+                    // Redirect to a new page or display a message
+                    resp.sendRedirect("index.jsp");
 
-            // Redirect to a new page or display a message
-            resp.sendRedirect("index.jsp");
-
-//            resp.sendRedirect("/");
-        } else {
+        //            resp.sendRedirect("/");
+                } else {
             // Display error message on login page
             String errorMessage = "Login failed. Invalid email or password.";
             req.setAttribute("errorMessage", errorMessage);

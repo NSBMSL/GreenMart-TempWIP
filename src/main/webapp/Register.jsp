@@ -126,7 +126,7 @@
                 <div class="col-xxl-4 col-xl-5 col-lg-6 me-auto">
                     <div class="log-in-box">
                         <div class="log-in-title">
-                            <h3>Welcome To Fastkart</h3>
+                            <h3>Welcome To GreenMart</h3>
                             <h4>Create New Account</h4>
                         </div>
 

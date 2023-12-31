@@ -105,7 +105,7 @@
                             <h1 class="fw-bold w-100">100% Fresh</h1>
                             <h3 class="text-content fw-light">Fruit & Vegetables</h3>
                             <p class="d-sm-block d-none">Free shipping on all your order. we deliver you enjoy</p>
-                            <button onclick="location.href = 'shop-left-sidebar.html';"
+                            <button onclick="location.href = ' ';"
                                     class="btn mt-sm-4 btn-2 theme-bg-color text-white mend-auto btn-2-animation">Shop
                                 Now</button>
                         </div>
@@ -121,9 +121,9 @@
                     <div class="home-detail text-center p-top-center w-100 text-white">
                         <div>
                             <h4 class="fw-bold">Fresh & 100% Organic</h4>
-                            <h5 class="text-center">famer's market</h5>
+                            <h5 class="text-center">farmer's market</h5>
                             <button class="btn bg-white theme-color mt-3 home-button mx-auto btn-2"
-                                    onclick="location.href = 'shop-left-sidebar.html';">Shop Now</button>
+                                    onclick="location.href = ' ';">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                 <div class="row g-3">
                     <div class="col-xxl-12 col-sm-6">
                         <div class="home-contain">
-                            <a href="shop-left-sidebar.html">
+                            <a href=" ">
                                 <img src="assets/images/veg-3/home/3.png" class="img-fluid bg-img blur-up lazyload"
                                      alt="">
                             </a>
@@ -148,7 +148,7 @@
 
                     <div class="col-xxl-12 col-sm-6">
                         <div class="home-contain">
-                            <a href="shop-left-sidebar.html">
+                            <a href=" ">
                                 <img src="assets/images/veg-3/home/4.png" class="img-fluid bg-img blur-up lazyload"
                                      alt="">
                             </a>
@@ -178,55 +178,45 @@
                 <div class="category-slider arrow-slider">
                     <div>
                         <div class="shop-category-box border-0 wow fadeIn">
-                            <a href="shop-left-sidebar.html" class="circle-1">
-                                <img src="assets/images/veg-3/category/1.png" class="img-fluid blur-up lazyload"
+                            <a href="#cooking" class="circle-1">
+                                <img src="assets/images/veg-3/category/6.png" class="img-fluid blur-up lazyload"
                                      alt="">
                             </a>
                             <div class="category-name">
-                                <h6>Oils, Rofined & Ghee</h6>
+                                <h6>Vegetables</h6>
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.05s">
-                            <a href="shop-left-sidebar.html" class="circle-2">
+                            <a href="#" class="circle-2">
                                 <img src="assets/images/veg-3/category/2.png" class="img-fluid blur-up lazyload"
                                      alt="">
                             </a>
                             <div class="category-name">
-                                <h6>Rice, Flour & Grains</h6>
+                                <h6>Rice & Grains</h6>
                             </div>
-                        </div>
+                    </div>
                     </div>
 
                     <div>
                         <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.1s">
-                            <a href="shop-left-sidebar.html" class="circle-3">
-                                <img src="assets/images/veg-3/category/3.png" class="img-fluid blur-up lazyload"
+                            <a  href="#fruits" class="circle-3">
+                                <img src="assets/images/vegetable/pngegg.png" class="img-fluid blur-up lazyload"
                                      alt="">
                             </a>
                             <div class="category-name">
-                                <h6>Food Cupboard</h6>
+                                <h6>Fruits</h6>
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.15s">
-                            <a href="shop-left-sidebar.html" class="circle-4">
-                                <img src="assets/images/veg-3/category/4.png" class="img-fluid blur-up lazyload"
-                                     alt="">
-                            </a>
-                            <div class="category-name">
-                                <h6>Rice and Grains</h6>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div>
                         <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.2s">
-                            <a href="shop-left-sidebar.html" class="circle-4">
+                            <a href="#beverages" class="circle-4">
                                 <img src="assets/images/veg-3/category/5.png" class="img-fluid blur-up lazyload"
                                      alt="">
                             </a>
@@ -236,50 +226,40 @@
                         </div>
                     </div>
 
-                    <div>
-                        <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.25s">
-                            <a href="shop-left-sidebar.html" class="circle-1">
-                                <img src="assets/images/veg-3/category/6.png" class="img-fluid blur-up lazyload"
-                                     alt="">
-                            </a>
-                            <div class="category-name">
-                                <h6>Fresh Fruits & Vegetables</h6>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div>
                         <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.3s">
-                            <a href="shop-left-sidebar.html" class="circle-2">
+                            <a href=#instant class="circle-2">
                                 <img src="assets/images/veg-3/category/7.png" class="img-fluid blur-up lazyload"
                                      alt="">
                             </a>
                             <div class="category-name">
-                                <h6>Ready to eat Meals</h6>
+                                <h6>Instant Foods</h6>
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.35s">
-                            <a href="shop-left-sidebar.html" class="circle-3">
-                                <img src="assets/images/veg-3/category/8.png" class="img-fluid blur-up lazyload"
+                            <a href="#canned" class="circle-3">
+                                <img src="assets/images/vegetable/pngegg (1).png" class="img-fluid blur-up lazyload"
                                      alt="">
                             </a>
                             <div class="category-name">
-                                <h6>Instant Mixes</h6>
+                                <h6>Canned Goods</h6>
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div class="shop-category-box border-0 wow fadeIn" data-wow-delay="0.4s">
-                            <a href="shop-left-sidebar.html" class="circle-4">
-                                <img src="assets/images/veg-3/category/2.png" class="img-fluid blur-up lazyload"
+                            <a href="" class="circle-4">
+                                <img src="assets/images/veg-3/category/8.png" class="img-fluid blur-up lazyload"
                                      alt="">
                             </a>
                             <div class="category-name">
-                                <h6>Rice, Flour & Grains</h6>
+                                <h6>Spices</h6>
                             </div>
                         </div>
                     </div>
@@ -790,7 +770,7 @@
                             <h2 class="my-3">100% Organic Best Quality Best Price</h2>
                             <h4 class="text-content fw-300">Best GreenMart Food Quality</h4>
                             <button class="btn theme-bg-color mt-sm-4 btn-md mx-auto text-white fw-bold"
-                                    onclick="location.href = 'shop-left-sidebar.html';">Shop Now</button>
+                                    onclick="location.href = ' ';">Shop Now</button>
                         </div>
                     </div>
                 </div>

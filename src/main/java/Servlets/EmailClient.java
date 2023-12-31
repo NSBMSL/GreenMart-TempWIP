@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.resend.*;
+import com.resend.Resend;
 import com.resend.core.exception.ResendException;
 import com.resend.services.emails.model.SendEmailRequest;
 import com.resend.services.emails.model.SendEmailResponse;
@@ -18,15 +18,23 @@ public class EmailClient extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Resend resend = new Resend("re_VjFUryQH_BUKsmzsqdtcaQqD4vdwWMdu3");
+        Resend resend = new Resend("re_W4GdaV6L_FpjcJM1gLRUGQYkTfFF7yxva");
+
+        // Retrieve cart items and total price from the request or session
+        String cartItems = (String) req.getSession().getAttribute("cart-items");
+        String totalPrice = (String) req.getSession().getAttribute("total-price");
+
+        // Construct the email content
+        String emailContent = "<p>Here are your cart items:</p>" +
+                              "<p>" + cartItems + "</p>" +
+                              "<p>Total price: " + totalPrice + "</p>";
 
         SendEmailRequest sendEmailRequest = SendEmailRequest.builder()
-                .from("Greenmart@resend.dev")
-                .to("gsahindu@gmail.com")
-                .subject("Payment Successful")
-                .html("<p>Products Order Placed!<strong>first email</strong>!</p>")
+                .from("onboarding@resend.dev")
+                .to("nmhetti619@gmail.com")
+                .subject("Your Cart Items")
+                .html(emailContent)
                 .build();
-        System.out.println("email sent");
 
         try {
             SendEmailResponse data = resend.emails().send(sendEmailRequest);
@@ -34,10 +42,5 @@ public class EmailClient extends HttpServlet {
         } catch (ResendException e) {
             e.printStackTrace();
         }
-
-
     }
 }
-
-
-
