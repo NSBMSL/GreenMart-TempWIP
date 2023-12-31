@@ -37,7 +37,22 @@
                         <a href="#" class="web-logo nav-logo">
                             <img src="assets/images/logo/3.png" class="img-fluid blur-up lazyload" alt="">
                         </a>
+                        <% String email = (String) session.getAttribute("email"); %>
+                        <p class="header-text">Hi, <%= email %></p>
+                        <style>
+                            .header-text {
+                                color: #0baf9a;
+                                font-size: 18px;
+                                font-weight: 600;
+                                margin-top: 25px;
+                                margin-left: 20px;
+                                margin-right: 20px;
 
+
+                                text-align: center;
+                            }
+                        </style>
+                        
                         <div class="search-full">
                             <div class="input-group">
                                     <span class="input-group-text">
@@ -67,20 +82,9 @@
                                             <a id="eng" class="dropdown-item" href="javascript:void(0)">English</a>
                                         </li>
                                         <li>
-                                            <a id="hin" class="dropdown-item" href="javascript:void(0)">Hindi</a>
+                                            <a id="hin" class="dropdown-item" href="javascript:void(0)">Sinhala</a>
                                         </li>
-                                        <li>
-                                            <a id="guj" class="dropdown-item" href="javascript:void(0)">Gujarati</a>
-                                        </li>
-                                        <li>
-                                            <a id="arb" class="dropdown-item" href="javascript:void(0)">Arbic</a>
-                                        </li>
-                                        <li>
-                                            <a id="rus" class="dropdown-item" href="javascript:void(0)">Rusia</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="javascript:void(0)">Chinese</a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
 
@@ -111,64 +115,11 @@
                                         </li>
 
                                         <li class="onhover-dropdown">
-                                            <a href="#" class="header-icon fa-solid fa-bag-shopping">
-                                                <small class="badge-number">2</small>
+                                            <a href="cart.html" class="header-icon fa-solid fa-bag-shopping">
+                                           
 
                                             </a>
-                                            <div class="onhover-div">
-                                                <ul class="cart-list">
-                                                    <li>
-                                                        <div class="drop-cart">
-                                                            <a href="#" class="drop-image">
-                                                                <img src="assets/images/vegetable/product/1.png"
-                                                                     class="blur-up lazyload" alt="">
-                                                            </a>
-
-                                                            <div class="drop-contain">
-                                                                <a href="#">
-                                                                    <h5>Fantasy Crunchy Choco Chip Cookies</h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> LKR 80.58</h6>
-                                                                <button class="close-button">
-                                                                    <i class="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="drop-cart">
-                                                            <a href="#" class="drop-image">
-                                                                <img src="assets/images/vegetable/product/2.png"
-                                                                     class="blur-up lazyload" alt="">
-                                                            </a>
-
-                                                            <div class="drop-contain">
-                                                                <a href="#">
-                                                                    <h5>Peanut Butter Bite Premium Butter Cookies
-                                                                        600 g
-                                                                    </h5>
-                                                                </a>
-                                                                <h6><span>1 x</span> LKR 25.68</h6>
-                                                                <button class="close-button">
-                                                                    <i class="fa-solid fa-xmark"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="price-box">
-                                                    <h5>Price :</h5>
-                                                    <h4 class="theme-color fw-bold">LKR 106.58</h4>
-                                                </div>
-
-                                                <div class="button-group">
-                                                    <a href="#" class="btn btn-sm cart-button">View Cart</a>
-                                                    <a href="#" class="btn btn-sm cart-button theme-bg-color
-                                                        text-white">Checkout</a>
-                                                </div>
-                                            </div>
+                                           
                                         </li>
                                         <li class="right-side onhover-dropdown">
                                             <div class="delivery-login-box">

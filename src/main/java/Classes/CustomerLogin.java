@@ -18,6 +18,7 @@ public class CustomerLogin {
             try (PreparedStatement preparedStatement = dbconn.getConnection().prepareStatement(sql)) {
                 preparedStatement.setString(1, email);
                 preparedStatement.setString(2, password);
+                
 
                 try (ResultSet resultSet = preparedStatement.executeQuery()) {
                     return resultSet.next();
