@@ -105,8 +105,8 @@
                             <h1 class="fw-bold w-100">100% Fresh</h1>
                             <h3 class="text-content fw-light">Fruit & Vegetables</h3>
                             <p class="d-sm-block d-none">Free shipping on all your order. we deliver you enjoy</p>
-                            <button onclick="location.href = ' ';"
-                                    class="btn mt-sm-4 btn-2 theme-bg-color text-white mend-auto btn-2-animation">Shop
+                            <button onclick="location.href = ' ';" style="background-color: #03C04A;"
+                                    class="btn mt-sm-4 btn-2  text-white mend-auto btn-2-animation">Shop
                                 Now</button>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                         <div>
                             <h4 class="fw-bold">Fresh & 100% Organic</h4>
                             <h5 class="text-center">farmer's market</h5>
-                            <button class="btn bg-white theme-color mt-3 home-button mx-auto btn-2"
+                            <button class="btn bg-white  mt-3 home-button mx-auto btn-2" style="background-color: #03C04A;"
                                     onclick="location.href = ' ';">Shop Now</button>
                         </div>
                     </div>
@@ -278,7 +278,7 @@
             <h2 class="mb-lg-0 mb-2">Our Products</h2>
             <ul class="nav nav-tabs tab-style-color" id="myTab scrollup">
                 <li class="nav-item">
-                    <button class="nav-link btn active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+                    <button class="nav-link btn active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" style="background-color: #03C04A;"
                             type="button">All</button>
                 </li>
 
@@ -343,9 +343,9 @@
                                         </li>
                                     </ul>
                                     <a href="#">
-                                        <h5 class="name">${product.name}</h5>
+                                        <h5 class="name" >${product.name}</h5>
                                     </a>
-                                    <h5 class="price theme-color">${product.price}</h5>
+                                    <h5  style="color: #03C04A;">${product.price}</h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -359,7 +359,7 @@
                                         </div>
                                     </div>
                                     
-                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart  notifi-wishlist">
+                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart  notifi-wishlist" style="background-color: #03C04A;">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>  
                                     </div>
@@ -405,7 +405,7 @@
                                 <a >
                                     <h5 class="name">${product.name}</h5>
                                 </a>
-                                <h5 class="price theme-color">${product.price}</h5>
+                               C
                                 <div class="price-qty">
                                     <div class="counter-number">
                                         <div class="counter">
@@ -419,7 +419,7 @@
                                         </div>
                                     </div>
                                     
-                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist">
+                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist"  style="background-color: #03C04A;">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>                                    
                                 </div>
@@ -467,7 +467,7 @@
                                 <a >
                                     <h5 class="name">${product.name}</h5>
                                 </a>
-                                <h5 class="price theme-color">${product.price}</h5>
+                               <h5  style="color: #03C04A;">${product.price}</h5>
                                 <div class="price-qty">
                                     <div class="counter-number">
                                         <div class="counter">
@@ -481,7 +481,7 @@
                                         </div>
                                     </div>
                                     
-                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist">
+                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist"  style="background-color: #03C04A;">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>  
                                 </div>
@@ -529,7 +529,7 @@
                                     <a >
                                         <h5 class="name">${product.name}</h5>
                                     </a>
-                                    <h5 class="price theme-color">${product.price}</h5>
+                                   <h5 class="price theme-color" style="color: #03C04A;">${product.price}</h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -543,7 +543,7 @@
                                             </div>
                                         </div>
 
-                                        <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist">
+                                        <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist"  style="background-color: #03C04A;">
                                             <i class="fa-solid fa-cart-shopping"></i>
                                         </button>
                                     </div>
@@ -591,7 +591,7 @@
                                     <a >
                                         <h5 class="name">${product.name}</h5>
                                     </a>
-                                    <h5 class="price theme-color">${product.price}</h5>
+                                    <h5  style="color: #03C04A;">${product.price}</h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -605,7 +605,7 @@
                                             </div>
                                         </div>
 
-                                        <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist">
+                                        <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist"  style="background-color: #03C04A;">
                                             <i class="fa-solid fa-cart-shopping"></i>
                                         </button>
                                     </div>
@@ -653,7 +653,7 @@
                                     <a >
                                         <h5 class="name">${product.name}</h5>
                                     </a>
-                                    <h5 class="price theme-color">${product.price}</h5>
+                                    <h5  style="color: #03C04A;">${product.price}</h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -667,7 +667,7 @@
                                             </div>
                                         </div>
 
-                                        <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist">
+                                        <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart notifi-wishlist"  style="background-color: #03C04A;">
                                             <i class="fa-solid fa-cart-shopping"></i>
                                         </button>
                                     </div>
@@ -723,7 +723,7 @@
                                     <a >
                                         <h5 class="name">${product.name}</h5>
                                     </a>
-                                    <h5 class="price theme-color">${product.price}</h5>
+                                   <h5 style="color: #03C04A;">${product.price}</h5>
                                     <div class="price-qty">
                                         <div class="counter-number">
                                             <div class="counter">
@@ -737,7 +737,7 @@
                                         </div>
                                     </div>
                                     
-                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart">
+                                    <button onclick="addToCart(this, '${product.name}', '${product.price}', '${product.id}')" class="buy-button buy-button-2 btn btn-cart"  style="background-color: #03C04A;">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>  
                                     </div>
@@ -769,7 +769,7 @@
                             <h4 class="ls-expanded text-uppercase theme-color">Try Our New</h4>
                             <h2 class="my-3">100% Organic Best Quality Best Price</h2>
                             <h4 class="text-content fw-300">Best GreenMart Food Quality</h4>
-                            <button class="btn theme-bg-color mt-sm-4 btn-md mx-auto text-white fw-bold"
+                            <button class="btn bg-white  mt-3 home-button mx-auto btn-2" style="background-color: #03C04A;"
                                     onclick="location.href = ' ';">Shop Now</button>
                         </div>
                     </div>
