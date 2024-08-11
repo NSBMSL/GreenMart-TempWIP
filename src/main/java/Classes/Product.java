@@ -9,7 +9,7 @@ public class Product {
     private int quantity;
     private String category;
 
-    public Product() {
+    public Product(int id, String name, String category, double price, String image) {
         // Default constructor required for JSP EL
     }
 
@@ -21,6 +21,9 @@ public class Product {
         this.image = image;
         this.quantity = quantity;
         this.category = category;
+    }
+
+    public Product(String id, String name, String category, double price, String image) {
     }
 
     // Getters and setters

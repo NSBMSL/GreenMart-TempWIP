@@ -1,112 +1,259 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Hirusha
-  Date: 12/22/2023
-  Time: 12:52 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+    <meta name="description" content="GreenMart">
+    <meta name="keywords" content="GreenMart">
+    <meta name="author" content="GreenMart">
+    <link rel="icon" href=" assets/images/favicon/1.png" type="image/x-icon">
+    <title>Log In</title>
 
-        .container {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 400px;
-            max-width: 100%;
-            box-sizing: border-box;
-        }
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
 
-        .header {
-            background-color: #3498db;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href=" assets/css/vendors/bootstrap.css">
 
-        .form {
-            padding: 20px;
-            box-sizing: border-box;
-        }
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href=" assets/css/vendors/font-awesome.css">
 
-        .input-group {
-            margin-bottom: 20px;
-        }
+    <!-- feather icon css -->
+    <link rel="stylesheet" type="text/css" href=" assets/css/vendors/feather-icon.css">
 
-        .input-group label {
-            display: block;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href=" assets/css/vendors/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href=" assets/css/vendors/slick/slick-theme.css">
 
-        .input-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href=" assets/css/bulk-style.css">
 
-        .error-message {
-            color: #e74c3c;
-            margin-bottom: 10px;
-        }
-
-        .form-btn {
-            background-color: #2ecc71;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            font-size: 16px;
-        }
-
-        .form-btn:hover {
-            background-color: #27ae60;
-        }
-    </style>
+    <!-- Template css -->
+    <link id="color-link" rel="stylesheet" type="text/css" href=" assets/css/style.css">
 </head>
+
 <body>
-<div class="container">
-    <div class="header">
-        <h2>Login</h2>
-    </div>
-    <div class="form">
-       <form action="Login" method="post" >
-           <div class="error-message">${errorMessage}</div>
-           <p>${regi}</p>
-           <div class="input-group">
-               <label for="email">Email:</label>
-               <input type="text" id="email" name="email" required>
-           </div>
-           <div class="input-group">
-               <label for="password">Password:</label>
-               <input type="password" id="password" name="password" required>
-           </div>
-           <button class="form-btn" type="submit" >Login</button>
-       </form>
-        <p>not have an accout? <a href="Register.jsp">Register</a></p>
-    </div>
-</div>
 
+    <!-- Loader Start -->
+    <div class="fullpage-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Loader End -->
 
+<!-- Header Start -->
+<%@ include file="Header.jsp" %>
+<!-- Header Start -->
+
+    <!-- Header End -->
+
+    <!-- mobile fix menu start -->
+    <div class="mobile-menu d-md-none d-block mobile-cart">
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    <i class="iconly-Home icli"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li class="mobile-category">
+                <a href="javascript:void(0)">
+                    <i class="iconly-Category icli js-link"></i>
+                    <span>Category</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="search.html" class="search-box">
+                    <i class="iconly-Search icli"></i>
+                    <span>Search</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="wishlist.html" class="notifi-wishlist">
+                    <i class="iconly-Heart icli"></i>
+                    <span>My Wish</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    <i class="iconly-Bag-2 icli fly-cate"></i>
+                    <span>Cart</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- mobile fix menu end -->
+
+    <!-- Breadcrumb Section Start -->
+    <section class="breadscrumb-section pt-0">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadscrumb-contain">
+                        <h2 class="mb-2">Log In</h2>
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.html">
+                                                <i class="fa-solid fa-house"></i>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">Login</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- log in section start -->
+    <section class="log-in-section background-image-2 section-b-space">
+        <div class="container-fluid-lg w-100">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-5 col-lg-6 d-lg-block d-none ms-auto">
+                    <div class="image-contain">
+                        <img src="assets/images/inner-page/log-in.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xxl-4 col-xl-5 col-lg-6 me-auto">
+                    <div class="log-in-box">
+                        <div class="log-in-title">
+                            <h3>Welcome To GreenMart</h3>
+                            <h4>Log In Your Account</h4>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="from">
+                            <form action="Login" method="post" class="row g-4">
+                                <div class="col-12">
+                                    <div class="error-message">${errorMessage}</div>
+                                      <p>${regi}</p>
+                                    <div class="form-floating theme-form-floating log-in-form">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="email">
+                                        <label for="email">Email Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating theme-form-floating log-in-form">
+                                        <input type="password" class="form-control" id="password" name="password"
+                                            placeholder="Password">
+                                        <label for="password">Password</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="forgot-box">
+                                        <div class="form-check ps-0 m-0 remember-box">
+                                            <input class="checkbox_animated check-box" type="checkbox"
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                                        </div>
+                                        <a href="forgot.html" class="forgot-password">Forgot Password?</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-animation w-100 justify-content-center" type="submit">Log
+                                        In</button>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+
+                        <div class="other-log-in">
+                            <h6>or</h6>
+                        </div>
+
+                        <div class="log-in-button">
+                            <ul>
+                                <li>
+                                    <a href="https://www.google.com/" class="btn google-button w-100">
+                                        <img src=" assets/images/inner-page/google.png" class="blur-up lazyload"
+                                            alt=""> Log In with Google
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="other-log-in">
+                            <h6></h6>
+                        </div>
+
+                        <div class="sign-up-box">
+                            <h4>Don't have an account?</h4>
+                            <a href="Register.jsp">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- log in section end -->
+
+    <!-- Footer Section Start -->
+    <%@ include file="Footer.jsp" %>
+    <!-- Footer Section End -->
+
+    <!-- Tap to top start -->
+    <div class="theme-option">
+
+        <div class="back-to-top">
+            <a id="back-to-top" href="#">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Tap to top end -->
+
+    <!-- Bg overlay Start -->
+    <div class="bg-overlay"></div>
+    <!-- Bg overlay End -->
+
+    <!-- latest jquery-->
+    <script src=" assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src=" assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src=" assets/js/bootstrap/popper.min.js"></script>
+
+    <!-- feather icon js-->
+    <script src=" assets/js/feather/feather.min.js"></script>
+    <script src=" assets/js/feather/feather-icon.js"></script>
+
+    <!-- Slick js-->
+    <script src=" assets/js/slick/slick.js"></script>
+    <script src=" assets/js/slick/slick-animation.min.js"></script>
+    <script src=" assets/js/slick/custom_slick.js"></script>
+
+    <!-- Lazyload Js -->
+    <script src=" assets/js/lazysizes.min.js"></script>
+
+    <!-- script js -->
+    <script src=" assets/js/script.js"></script>
+
+    <!-- thme setting js -->
+    <script src=" assets/js/theme-setting.js"></script>
+    <script src="https://kit.fontawesome.com/6e0728b28d.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

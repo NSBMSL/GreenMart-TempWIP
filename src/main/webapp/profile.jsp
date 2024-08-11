@@ -1,5 +1,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String userRole = (String) session.getAttribute("userRole");
+    if (!"admin".equals(userRole)) {
+        response.sendRedirect("404.jsp"); // Redirect to error page
+        return; // Stop processing the rest of the page
+    }
+%>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -9,7 +16,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <title>GreenMart</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -51,7 +58,7 @@
 
         .show-sidebar {
             right: 0;
-            margin-right: 300px;
+            /*margin-right: 300px;*/
         }
 
         .sidebar-content {
@@ -123,10 +130,64 @@
         .delete-products-button:hover {
             background-color: #c44131; /* Darker red on hover */
         }
+
+        /* Additional Styles for Improved Design */
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #219d52;
+            border-color: #219d52;
+        }
+
+        .btn-primary:hover {
+            background-color: #1a8b47;
+            border-color: #1a8b47;
+        }
+
+        .btn-warning {
+            background-color: #f39c12;
+            border-color: #f39c12;
+        }
+
+        .btn-warning:hover {
+            background-color: #d68910;
+            border-color: #d68910;
+        }
+
+        .btn-danger {
+            background-color: #e74c3c;
+            border-color: #e74c3c;
+        }
+
+        .btn-danger:hover {
+            background-color: #c44131;
+            border-color: #c44131;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 
 <body>
+<p>${errorMessage}</p>
+<p>${messege}</p>
 
 <!-- Page content with Bootstrap grid system -->
 <div class="container-fluid">
@@ -184,18 +245,26 @@
         <div class="sidebar" id="sidebar">
             <!-- Add your sidebar content here -->
             <div class="sidebar-content">
-                <h2 style="margin-bottom: 20px;">Product Management</h2>
+                <h2>Product Management</h2>
 
-                <form>
-                    <input type="text" class="form-control" id="productId" placeholder="ID">
-                    <input type="text" class="form-control" id="productName" placeholder="Name">
-                    <input type="text" class="form-control" id="productQuantity" placeholder="Quantity">
-                    <input type="text" class="form-control" id="productDescription" placeholder="Description">
-                    <input type="text" class="form-control" id="productPrice" placeholder="Price">
-                    <input type="text" class="form-control" id="productCategory" placeholder="Category">
-                    <input type="text" class="form-control" id="productImage" placeholder="Image">
-                    <input type="text" class="form-control" id="productWeight" placeholder="Weight">
-                    <button class="btn btn-primary" onclick="addProduct()">Add</button>
+                <form action="AddProduct" method="get">
+
+                    <input type="text" class="form-control" id="productName" placeholder="Name" name="name">
+                    <input type="text" class="form-control" id="productQuantity" placeholder="Quantity" name="quantity">
+                    <input type="text" class="form-control" id="productDescription" placeholder="Description" name="description">
+                    <input type="text" class="form-control" id="productPrice" placeholder="Price" name="price">
+                    <select class="form-control" id="productCategory" name="category">
+                        <option value="">Select Category</option>
+                        <option value="cooking">Cooking</option>
+                        <option value="instant">Instant</option>
+                        <option value="rice">Rice</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="canned">Canned</option>
+                        <option value="beverage">Beverage</option>
+                    </select>
+                  <input type="text" class="form-control" id="productImage" placeholder="ImageLink" name="">
+
+                    <button class="btn btn-primary" type="submit">Add</button>
                     <button class="btn btn-warning" onclick="updateProduct()">Update</button>
                     <button class="btn btn-danger" onclick="deleteProduct()">Delete</button>
                 </form>
@@ -265,6 +334,7 @@
     function deleteProduct() {
         // Implement logic for deleting a product
         alert("Product deleted!");
+
         toggleSidebar();
     }
 </script>
@@ -272,5 +342,3 @@
 </body>
 
 </html>
-
-

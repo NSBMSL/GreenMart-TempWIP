@@ -19,11 +19,11 @@ public class Dbconn {
     public void openConnection() throws ClassNotFoundException, SQLException {
         String url = "jdbc:postgresql://db.hdxkttfpttzxrkwndehc.supabase.co:5432/postgres";
         String username = "postgres";
-        String password = "Sahiya@448866";
+        String password = "Kavindu070133";
         Class.forName("org.postgresql.Driver");
         System.out.println("Database class logged");
 
-        connection = DriverManager.getConnection(url, username, password);
+        connection = DriverManager.getConnection("jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:6543/postgres?user=postgres.hdxkttfpttzxrkwndehc&password=Kavindu070133");
         System.out.println("Database connected");
     }
 
